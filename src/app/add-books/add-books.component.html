@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Book Title:</label>
+                    <input placeholder="Enter your Book Title"type="text" class="form-control" name="bookTitle" [(ngModel)]="bookTitle">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Author Name:</label>
+                    <input placeholder="Enter your Author Name"type="text" class="form-control" name="authorName" [(ngModel)]="authorName">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">ISBN:</label>
+                    <input placeholder="Enter your Author Name"type="text" class="form-control" name="isbn" [(ngModel)]="isbn">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Author EmailId:</label>
+                    <input placeholder="Enter your Author EmailId"type="email" name="authorEmail" id=""[(ngModel)]="authorEmail">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Book Summary:</label>
+                    <textarea placeholder="Enter your Book Summary"name="bookSummary" id="" cols="30" rows="10"[(ngModel)]="bookSummary"></textarea>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Publisher:</label>
+                    <input placeholder="Enter your Publisher"type="Date" name="publisher" id=""class="form-control" [(ngModel)]="publisher">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Page Count:</label>
+                    <input placeholder="Enter your Page Count"type="text" class="form-control" name="pageCount" [(ngModel)]="pageCount">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Date of Publisher:</label>
+                    <input placeholder="Enter your Date of Publisher"type="date" name="dateOfPublisher" id=""[(ngModel)]="dateOfPublisher">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Language:</label>
+                    <input placeholder="Enter your Language"type="text" class="form-control" name="language" [(ngModel)]="language">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Publication Country:</label>
+                    <input placeholder="Enter your Publication Country"type="text" class="form-control" name="publicationCountry" [(ngModel)]="publicationCountry">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Edition:</label>
+                    <input placeholder="Enter your Edition"type="text" class="form-control" name="edition" [(ngModel)]="edition">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button" (click)="readValue()">Submit</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
