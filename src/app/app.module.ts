@@ -8,6 +8,7 @@ import { AddBooksComponent } from './add-books/add-books.component';
 import { ViewBooksComponent } from './view-books/view-books.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 const appRoutes:Routes=[
   {
     path:"",component:AddBooksComponent
@@ -27,7 +28,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
