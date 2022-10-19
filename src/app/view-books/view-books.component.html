@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Book Title</th>
+                    <th scope="col">Author Name</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col">Author EmailId</th>
+                    <th scope="col">Book Summary</th>
+                    <th scope="col">Publisher</th>
+                    <th scope="col">Page Count</th>
+                    <th scope="col">Date of Publisher</th>
+                    <th scope="col">Language</th>
+                    <th scope="col">Publication Country</th>
+                    <th scope="col">Edition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of libraryData">
+                    <td>{{i.bookTitle}}</td>
+                    <td>{{i.authorName}}</td>
+                    <td>{{i.isbn}}</td>
+                    <td>{{i.authorEmail}}</td>
+                    <td>{{i.bookSummary}}</td>
+                    <td>{{i.publisher}}</td>
+                    <td>{{i.pageCount}}</td>
+                    <td>{{i.dateOfPublisher}}</td>
+                    <td>{{i.language}}</td>
+                    <td>{{i.publicationCountry}}</td>
+                    <td>{{i.edition}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
