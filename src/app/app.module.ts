@@ -6,7 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddBooksComponent } from './add-books/add-books.component';
 import { ViewBooksComponent } from './view-books/view-books.component';
-
+import { RouterModule, Routes } from '@angular/router';
+const appRoutes:Routes=[
+  {
+    path:"",component:AddBooksComponent
+  },
+  {
+    path:"viewBooks",component:ViewBooksComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +24,8 @@ import { ViewBooksComponent } from './view-books/view-books.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
